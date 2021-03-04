@@ -1,123 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jamilla</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> O Gerador Lo-fi </title>  
+<link rel="stylesheet" type="text/css" href="css.css" media="screen" />
 
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
 
-	<script>document.documentElement.classList.add("js");</script>
-</head>
-<body>
 
-    <header data-anime="400" class="container fadeInDown"> 
-        <div class="icones">
-                <ul> 
-                    <li>
-                        <a href="facebook.com"><img src="img/fb.png"></a>
-                    </li>
-                    <li>
-                        <a href="twitter.com"><img src="img/twitter.png"></a>
-                    </li>
-                    <li>
-                        <a href="instagram.com"><img src="img/insta.png"></a>
-                    </li>
-                </ul>
-        </div>
-    </header>
+  </head>
 
-    <div data-anime="600" class="menu-logo fadeInDown">
-            <a href="index.html"><img src="img/logo.png"></a>
-        </div>
+  <body>
+      <div id="cliqueventilador" onclick="mousecliquevent()" onmouseover="ventiladormouseOver()" onmouseout="ventiladormouseOut()"></div>
+      <div id="cliquepisca" onclick="mousecliquepisca()" onmouseover="piscamouseOver()" onmouseout="piscamouseOut()"></div>
+      <div id="cliqueviolao" onclick="mousecliqueviolao()" onmouseover="violaomouseOver()" onmouseout="violaomouseOut()"></div>
+      <div id="cliqueradio" onclick="mousecliqueradio()" onmouseover="radiomouseOver()" onmouseout="radiomouseOut()"></div> 
+      <div id="cliqueswift" onclick="mousecliqueswift()" onmouseover="swiftmouseOver()" onmouseout="swiftmouseOut()"></div> 
+      <div id="cliqueporta" onclick="mousecliqueporta()" onmouseover="portamouseOver()" onmouseout="portamouseOut()"></div>       
+      <div id="cliquepc" onclick="mousecliquepc()" onmouseover="pcmouseOver()" onmouseout="pcmouseOut()"></div>
+      <div id="cliquegatoJanela" onclick="mousecliquegatoJanela()" onmouseover="gatoJanelamouseOver()" onmouseout="gatoJanelamouseOut()"></div>
+      <div id="cliquecelular" onclick="mousecliquecelular()" onmouseover="celularmouseOver()" onmouseout="celularmouseOut()"></div>
+      <div id="cliquegatoCama" onclick="mousecliquegatoCama()" onmouseover="gatoCamamouseOver()" onmouseout="gatoCamamouseOut()"></div>
+      <div id="cliquejanelaChuva" onclick="mousecliquejanelaChuva()" onmouseover="janelaChuvamouseOver()" onmouseout="janelaChuvamouseOut()"></div>
+      <div id="cliquegatoPrateleira" onclick="mousecliquegatoPrateleira()" onmouseover="gatoPrateleiramouseOver()" onmouseout="gatoPrateleiramouseOut()"></div>
+      <div id="cliquePTriste" onclick="mousecliquePTriste()" onmouseover="PTristemouseOver()" onmouseout="PTristemouseOut()"></div>
+      <div id="cliquePRelaxante" onclick="mousecliquePRelaxante()" onmouseover="PRelaxantemouseOver()" onmouseout="PRelaxantemouseOut()"></div>
+      <div id="cliquePNostalgia" onclick="mousecliquePNostalgia()" onmouseover="PNostalgiamouseOver()" onmouseout="PNostalgiamouseOut()"></div>
+      <div id="cliquePAcolhedor" onclick="mousecliquePAcolhedor()" onmouseover="PAcolhedormouseOver()" onmouseout="PAcolhedormouseOut()"></div>
 
-        
-        <nav data-anime="800" class="menu-nav container fadeInDown">
-            <ul>
-                <li><a href="novidades.html">NOVIDADES</a></li>
-                <li><a href="gravatas.html">GRAVATAS</a></li>
-                <li><a href="index.html#sobrenos">SOBRE NÓS</a></li>
-                <li><a href="contato.html">CONTATO</a></li>
-            </ul>
-    </nav>
-  
-    
-    <section data-anime="1000" class="divulgacao fadeInDown">
-        <div class="container">
-        <div class="divulgacao-item"><img src="img/foto1.jpg"><h3>Criatividade</h3></div>
-        <div class="divulgacao-item"><img src="img/foto2.jpg"><h3>Bom gosto</h3></div>
-    </div>
-    </section>
+
+
+      <canvas id="m_canvas" width="1280" height="720">
+        </canvas>
+
  
-    
-    <section data-anime="1200" class="valores fadeInDown"> 
-       <div class="container">
-       <div class="valores-item"><img src="img/pattern.png"><br><br><h2>Diversidade</h2></div>
-       <div class="valores-item"><img src="img/pattern2.png"><br><br><h2>Originalidade</h2></div>
-       <div class="valores-item"><img src="img/pattern.png"><br><br><h2>Qualidade </h2></div>
-       <div class="valores-item"><img src="img/pattern2.png"><br><br><h2>Integridade</h2></div>
-       </div>
-    </section>
-
-    
-    
-    <section data-anime="1400" class="catalogo container fadeInDown">
-        <div class="catalogo-margem">
-        <div class="catalogo-item"><img src="img/foto4.jpg"><a class="catalogo-botao" href="gravatas.html">Listras</a></div>
-        <div class="catalogo-item"><img src="img/foto5.jpg"><a class="catalogo-botao" href="gravatas.html">Pintado</a></div>
-        <div class="catalogo-item"><img src="img/foto6.jpg"><a class="catalogo-botao" href="gravatas.html">Xadrez</a></div>
-        </div>
-    </section>
+    	<script type="text/javascript" src="estudio.js"></script>
 
 
-    <section data-anime="1600" class="sobre fadeInDown" id="sobrenos">
-        <div class="container">
-            <div class="sobre-item">
-            <h2>SOBRE NÓS</h2>
-            <p>Somos uma empresa nova, que cada vez mais se consolida em um mercado promissor. Com estampas divertidas e cores vibrantes, nós da Jamila procuramos dar um toque de originalidade a cada gravata produzida. </p>
-            </div>
-            <div class="sobre-item">
-                <img src="img/foto3.jpg">
-            </div>
-        </div>
-        </section>
+  </body>
 
-
-    <section data-anime="1800" class="creditos container fadeInDown"> 
-        <h2>CRÉDITOS</h2>
-        <div class="creditos-margem">
-         <p>Este site foi criado para aprendizado e portfólio, sem fins lucrativos. Jamila é uma empresa fictícia, criada para o desenvolvimento do site. </br></br>
-            As fotos utilizadas neste site foram do banco de imagens <a href="https://www.freepik.com/free-photos-vectors/background"> FreePik - www.freepik.com</a></br>
-            Os ícones usados no site pertencem ao <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a>, armazenados no site <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>  
-    </section>
-
-    <section data-anime="2000" class="newsletter container fadeInDown">
-           <div class="newsletter-item">    
-           <h2>NEWSLETTER</h2>
-           <p>Assine para receber conteúdos exclusivos e novidades sobre nossos produtos!</p>
-           </div>
-           <div class="newsletter-item">
-           <form>
-               <input type="email" placeholder="Digite seu e-mail aqui">
-               <button type="submit">Enviar </button>
-           </form>
-           </div>
-    </section>
-
-        <footer>
-            <div class="container">
-            <h2>Site produzido por Catarina Faria Mendes. </h2> 
-            </div>
-        </footer>
-
-
-
-<script src="js/simple-anime.js"></script>
-<script src="js/script.js"></script>
-
-
-</body>
-</html>
+</html> 
 
 
